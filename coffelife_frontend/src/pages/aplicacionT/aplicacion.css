@@ -1,0 +1,227 @@
+/* ════════════════════════════════════════
+   aplicacion.css
+   ════════════════════════════════════════ */
+
+.rl-container {
+  padding: 32px;
+  font-family: 'Lato', sans-serif;
+  background: #f5f7f2;
+  min-height: 100vh;
+}
+
+/* ─────────────────────────────
+   TÍTULO
+───────────────────────────── */
+.rl-title {
+  margin: 0 0 24px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+/* ─────────────────────────────
+   CARD
+───────────────────────────── */
+.rl-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.rl-label {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* ─────────────────────────────
+   FORMULARIO
+───────────────────────────── */
+.rl-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .rl-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rl-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rl-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.rl-field input,
+.rl-field textarea,
+.rl-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #d1d5db;
+  font-size: 14px;
+  background: #fafafa;
+  color: #111827;
+  transition: 0.2s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.rl-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.rl-field input:focus,
+.rl-field textarea:focus,
+.rl-field select:focus {
+  outline: none;
+  border-color: #4caf50;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.12);
+}
+
+/* ─────────────────────────────
+   BOTONES
+───────────────────────────── */
+.rl-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.rl-btn {
+  background: linear-gradient(
+    135deg,
+    #43a047,
+    #2e7d32
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.rl-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.rl-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rl-btn-cancel {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.rl-btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+/* ─────────────────────────────
+   ERROR
+───────────────────────────── */
+.rl-error {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fce8e8;
+  color: #b91c1c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ─────────────────────────────
+   TABLA
+───────────────────────────── */
+.rl-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.rl-table thead {
+  background: #e8f5e9;
+}
+
+.rl-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1b5e20;
+  white-space: nowrap;
+}
+
+.rl-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.rl-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.rl-empty {
+  text-align: center;
+  padding: 24px !important;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* ─────────────────────────────
+   BOTONES TABLA
+───────────────────────────── */
+.rl-icon-btn {
+  border: none;
+  background: #e8f5e9;
+  color: #2e7d32;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 15px;
+}
+
+.rl-icon-btn:hover {
+  background: #c8e6c9;
+}
+
+.rl-icon-btn--danger {
+  background: #fce8e8;
+  color: #b91c1c;
+}
+
+.rl-icon-btn--danger:hover {
+  background: #fecaca;
+}

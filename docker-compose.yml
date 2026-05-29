@@ -1,0 +1,20 @@
+
+services:
+
+  frontend:
+    build: ./coffelife_frontend
+
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - backend
+
+  backend:
+    build: ./coffe-life-ai
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./coffe-life-ai:/app
